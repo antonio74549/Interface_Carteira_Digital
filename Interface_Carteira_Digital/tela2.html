@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Escolha seu Perfil</title>
+    <style>
+      body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background: #f5f5f5;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+      .container {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        max-width: 800px;
+        width: 100%;
+        padding: 0 20px;
+      }
+      .user {
+            width: 200px;
+            height: 150px;
+        }
+    
+      .card {
+        padding: 20px;
+        background: white;
+        border-radius: 10px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        transition: transform 0.3s, box-shadow 0.3s;
+      }
+      .card:hover {
+        transform: scale(1.05);
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+      }
+      @media (min-width: 768px) {
+        .container {
+          flex-direction: row;
+        }
+      }
+       @media (min-width: 375px) {
+        .container {
+          flex-direction: row;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="card">
+        <img src="user.jpg" alt="usuario comum" class="user">
+        <h2>Usuário Comum</h2>
+        <p>Acesso básico às funcionalidades.</p>
+      </div>
+      <div class="card">
+        <img src="adm.png" alt="Administrador" class="user">
+        <h2>Administrador</h2>
+        <p>Acesso total aos recursos.</p>
+      </div>
+    </div>
+  </body>
+</html>
